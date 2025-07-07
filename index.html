@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nikie Evangelista | Data Engineer</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
     :root {
       --primary-color: #2d3436;
@@ -24,8 +25,9 @@
     header {
       background: linear-gradient(135deg, #0984e3, #6c5ce7);
       color: #fff;
-      padding: 40px 0;
+      padding: 40px 0 20px;
       text-align: center;
+      position: relative;
     }
 
     header h1 {
@@ -36,6 +38,57 @@
     header p {
       margin: 5px 0;
       font-size: 1.1rem;
+    }
+
+    nav {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-button {
+      background-color: #fff;
+      color: var(--primary-color);
+      padding: 10px 14px;
+      border-radius: 20px;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.95rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      right: 0;
+      background-color: #fff;
+      min-width: 160px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      z-index: 1;
+      overflow: hidden;
+    }
+
+    .dropdown-content a {
+      color: #2d3436;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      transition: background 0.3s;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
     }
 
     section {
@@ -67,10 +120,21 @@
 
     footer {
       text-align: center;
-      padding: 20px;
+      padding: 30px 20px 20px;
       background: var(--primary-color);
       color: #fff;
       margin-top: 40px;
+    }
+
+    .social-links a {
+      color: #fff;
+      margin: 0 10px;
+      font-size: 1.5rem;
+      transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #74b9ff;
     }
 
     .badge {
@@ -87,18 +151,29 @@
 <body>
 
   <header>
+    <nav>
+      <div class="dropdown">
+        <button class="dropdown-button"><i class="fas fa-bars"></i> Menu</button>
+        <div class="dropdown-content">
+          <a href="#about"><i class="fas fa-user"></i> About</a>
+          <a href="#skills"><i class="fas fa-tools"></i> Skills</a>
+          <a href="#experience"><i class="fas fa-briefcase"></i> Experience</a>
+          <a href="#education"><i class="fas fa-graduation-cap"></i> Education</a>
+          <a href="#references"><i class="fas fa-users"></i> References</a>
+        </div>
+      </div>
+    </nav>
     <h1>Nikie Jean Evangelista</h1>
     <p>Data Engineer/Analyst | Cloud Certified</p>
     <p>Email: nikievnglst@gmail.com | Phone: +63 977 693 1605 | Cainta, Rizal</p>
   </header>
 
-  <section>
+  <section id="about">
     <h2>About Me</h2>
     <p>I currently work on the ASDR (Analytical Solution Data Refresh) team at Accenture, where I focus entirely on backend data operations — designing, maintaining, and supporting scalable ETL pipelines that extract, transform, and load data from multiple cloud-based sources into internal systems used for reporting and decision-making.
-We use platforms like Google Cloud Platform (GCP) and Microsoft Azure, and I manage the full data refresh lifecycle — including automation, orchestration, scheduling, and validation of data loads across clients. Even though the final data feeds dashboards like Power BI, I don’t work on visualization; I own the backend workflows that make sure the data is always accurate, complete, and timely</p>
-  </section>
-
-  <section>
+We use platforms like Google Cloud Platform (GCP) and Microsoft Azure, and I manage the full data refresh lifecycle — including automation, orchestration, scheduling, and validation of data loads across clients. Even though the final data feeds dashboards like Power BI, I don’t work on visualization; I own the backend workflows that make sure the data is always accurate, complete, and timely
+</section>
+  <section id="skills">
     <h2>Technical Skills</h2>
     <span class="badge">BigQuery</span>
     <span class="badge">Dataflow</span>
@@ -121,7 +196,7 @@ We use platforms like Google Cloud Platform (GCP) and Microsoft Azure, and I man
     </ul>
   </section>
 
-  <section>
+  <section id="experience">
     <h2>Work Experience</h2>
     <h3>Data Engineering Analyst – Accenture, Inc. (2021 – Present)</h3>
     <ul>
@@ -139,12 +214,12 @@ We use platforms like Google Cloud Platform (GCP) and Microsoft Azure, and I man
     </ul>
   </section>
 
-  <section>
+  <section id="education">
     <h2>Education</h2>
     <p><strong>Cainta Catholic College</strong><br />B.S. in Computer Science, 2015 – 2019</p>
   </section>
 
-  <section>
+  <section id="references">
     <h2>Character References</h2>
     <ul>
       <li><strong>Ayesha Rei Ricafort</strong> – Data Engineering Analyst, Accenture Inc. – 09770998217</li>
@@ -154,6 +229,11 @@ We use platforms like Google Cloud Platform (GCP) and Microsoft Azure, and I man
 
   <footer>
     <p>&copy; 2025 Nikie Jean Evangelista. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/nikie-evangelista-26b564219/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/Niks1614" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="mailto:nikievnglst@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+    </div>
   </footer>
 
 </body>
