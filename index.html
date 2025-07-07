@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nikie Evangelista | Data Engineer</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     :root {
       --primary-color: #2d3436;
@@ -68,18 +68,19 @@
       position: absolute;
       right: 0;
       background-color: #fff;
-      min-width: 160px;
+      min-width: 200px;
       border-radius: 12px;
       box-shadow: 0 8px 16px rgba(0,0,0,0.1);
       z-index: 1;
-      overflow: hidden;
     }
 
     .dropdown-content a {
       color: #2d3436;
       padding: 12px 16px;
       text-decoration: none;
-      display: block;
+      display: flex;
+      align-items: center;
+      gap: 10px;
       transition: background 0.3s;
     }
 
@@ -155,11 +156,11 @@
       <div class="dropdown">
         <button class="dropdown-button"><i class="fas fa-bars"></i> Menu</button>
         <div class="dropdown-content">
-          <a href="#about"><i class="fas fa-user"></i> About</a>
-          <a href="#skills"><i class="fas fa-tools"></i> Skills</a>
-          <a href="#experience"><i class="fas fa-briefcase"></i> Experience</a>
-          <a href="#education"><i class="fas fa-graduation-cap"></i> Education</a>
-          <a href="#references"><i class="fas fa-users"></i> References</a>
+          <a href="about.html"><i class="fas fa-user"></i> About</a>
+          <a href="skills.html"><i class="fas fa-tools"></i> Skills</a>
+          <a href="experience.html"><i class="fas fa-briefcase"></i> Experience</a>
+          <a href="education.html"><i class="fas fa-graduation-cap"></i> Education</a>
+          <a href="references.html"><i class="fas fa-users"></i> References</a>
         </div>
       </div>
     </nav>
@@ -167,65 +168,6 @@
     <p>Data Engineer/Analyst | Cloud Certified</p>
     <p>Email: nikievnglst@gmail.com | Phone: +63 977 693 1605 | Cainta, Rizal</p>
   </header>
-
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I currently work on the ASDR (Analytical Solution Data Refresh) team at Accenture, where I focus entirely on backend data operations — designing, maintaining, and supporting scalable ETL pipelines that extract, transform, and load data from multiple cloud-based sources into internal systems used for reporting and decision-making.
-We use platforms like Google Cloud Platform (GCP) and Microsoft Azure, and I manage the full data refresh lifecycle — including automation, orchestration, scheduling, and validation of data loads across clients. Even though the final data feeds dashboards like Power BI, I don’t work on visualization; I own the backend workflows that make sure the data is always accurate, complete, and timely
-</section>
-  <section id="skills">
-    <h2>Technical Skills</h2>
-    <span class="badge">BigQuery</span>
-    <span class="badge">Dataflow</span>
-    <span class="badge">Airflow</span>
-    <span class="badge">Redshift</span>
-    <span class="badge">S3</span>
-    <span class="badge">Jenkins</span>
-    <span class="badge">SQL</span>
-    <span class="badge">Python</span>
-    <span class="badge">Power BI</span>
-    <span class="badge">PowerApps</span>
-    <span class="badge">ETL</span>
-  </section>
-
-  <section>
-    <h2>Certifications</h2>
-    <ul>
-      <li>Google Cloud Professional Data Engineer (June 2023)</li>
-      <li>Google Cloud Associate Cloud Engineer (August 2022)</li>
-    </ul>
-  </section>
-
-  <section id="experience">
-    <h2>Work Experience</h2>
-    <h3>Data Engineering Analyst – Accenture, Inc. (2021 – Present)</h3>
-    <ul>
-      <li>Developed and maintained data pipelines from lakes to warehouses</li>
-      <li>Wrote and executed SQL scripts for automated testing</li>
-      <li>Improved process efficiency by automating error logging and reporting</li>
-      <li>Led a team of testers to validate data pipeline quality</li>
-      <li>Supported business goals through data ingestion, validation, and cleaning</li>
-    </ul>
-
-    <h3>Back Office Associate – WNS Global Services (2020 – 2021)</h3>
-    <ul>
-      <li>Handled data entry and validation across finance, logistics, and accounting sectors</li>
-      <li>Performed daily quality checks and supported team coordination</li>
-    </ul>
-  </section>
-
-  <section id="education">
-    <h2>Education</h2>
-    <p><strong>Cainta Catholic College</strong><br />B.S. in Computer Science, 2015 – 2019</p>
-  </section>
-
-  <section id="references">
-    <h2>Character References</h2>
-    <ul>
-      <li><strong>Ayesha Rei Ricafort</strong> – Data Engineering Analyst, Accenture Inc. – 09770998217</li>
-      <li><strong>Ma. Danessa Gautane</strong> – Data Engineering Analyst, Accenture Inc. – 09278971659</li>
-    </ul>
-  </section>
 
   <footer>
     <p>&copy; 2025 Nikie Jean Evangelista. All rights reserved.</p>
@@ -235,7 +177,6 @@ We use platforms like Google Cloud Platform (GCP) and Microsoft Azure, and I man
       <a href="mailto:nikievnglst@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
     </div>
   </footer>
-
 
 </body>
 </html>
