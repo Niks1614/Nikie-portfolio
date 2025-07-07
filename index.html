@@ -32,12 +32,12 @@
 
     header h1 {
       margin: 0;
-      font-size: 2.8rem;
+      font-size: 2.4rem;
     }
 
     header p {
       margin: 5px 0;
-      font-size: 1.1rem;
+      font-size: 1rem;
     }
 
     nav {
@@ -92,6 +92,18 @@
       display: block;
     }
 
+    .profile-image {
+      margin-top: 20px;
+    }
+
+    .profile-image img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
     section {
       padding: 40px 20px;
       max-width: 1000px;
@@ -116,12 +128,21 @@
     ul {
       list-style-type: disc;
       margin-left: 20px;
-      padding-left: 10px;
+    }
+
+    .badge {
+      background-color: var(--accent-color);
+      color: white;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      display: inline-block;
+      margin: 4px 4px 8px 0;
     }
 
     footer {
       text-align: center;
-      padding: 30px 20px 20px;
+      padding: 30px 20px;
       background: var(--primary-color);
       color: #fff;
       margin-top: 40px;
@@ -138,14 +159,18 @@
       color: #74b9ff;
     }
 
-    .badge {
-      background-color: var(--accent-color);
-      color: white;
-      padding: 3px 8px;
-      border-radius: 6px;
-      font-size: 0.85rem;
-      display: inline-block;
-      margin: 3px;
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+      .dropdown-button {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+      }
+      .profile-image img {
+        width: 120px;
+        height: 120px;
+      }
     }
   </style>
 </head>
@@ -164,21 +189,27 @@
         </div>
       </div>
     </nav>
-  <h1>Nikie Jean Evangelista</h1>
-  <p>Data Engineer/Analyst | Cloud Certified</p>
-  <p>Email: nikievnglst@gmail.com | Phone: +63 977 693 1605 | Cainta, Rizal</p>
 
-  <div style="margin-top: 20px;">
-    <img src="473437598_906909331646326_1460956703889944855_n.jpg" alt="Nikie Evangelista" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
-  </div>
+    <h1>Nikie Jean Evangelista</h1>
+    <p>Data Engineer/Analyst | Cloud Certified</p>
+    <p>Email: nikievnglst@gmail.com | Phone: +63 977 693 1605 | Cainta, Rizal</p>
 
+    <div class="profile-image">
+      <img src="473437598_906909331646326_1460956703889944855_n.jpg" alt="Nikie Evangelista">
+    </div>
+  </header>
+
+  <section>
+    <h2>Welcome to my Portfolio! </h2>
+    <p>Hi! Thank you for visiting my portfolio! :)</p>
+  </section>
 
   <footer>
     <p>&copy; 2025 Nikie Jean Evangelista. All rights reserved.</p>
     <div class="social-links">
-      <a href="https://www.linkedin.com/in/nikie-evangelista-26b564219/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-      <a href="https://github.com/Niks1614" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-      <a href="mailto:nikievnglst@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/nikie-evangelista-26b564219/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/Niks1614" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="mailto:nikievnglst@gmail.com"><i class="fas fa-envelope"></i></a>
     </div>
   </footer>
 
