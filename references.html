@@ -8,7 +8,62 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     body { font-family: 'Inter', sans-serif; margin: 0; background: #f5f6fa; color: #2d3436; }
-    header { background: linear-gradient(135deg, #0984e3, #6c5ce7); color: #fff; padding: 40px 0; text-align: center; }
+    header { background: linear-gradient(135deg, #0984e3, #6c5ce7); color: #fff; padding: 40px 0 20px; text-align: center; position: relative; }
+    header h1 { margin: 0; font-size: 2.8rem; }
+    header p { margin: 5px 0; font-size: 1.1rem; }
+
+    nav {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-button {
+      background-color: #fff;
+      color: var(--primary-color);
+      padding: 10px 14px;
+      border-radius: 20px;
+      border: none;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 0.95rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      right: 0;
+      background-color: #fff;
+      min-width: 200px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: #2d3436;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: background 0.3s;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
     section { max-width: 900px; margin: 40px auto; background: #fff; padding: 40px; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.05); }
     h1, h2, ul { margin: 0 0 20px; }
     ul { padding-left: 20px; }
@@ -20,6 +75,19 @@
 <body>
 
   <header>
+    <nav>
+      <div class="dropdown">
+        <button class="dropdown-button"><i class="fas fa-bars"></i> Menu</button>
+        <div class="dropdown-content">
+          <a href="index.html"><i class="fas fa-home"></i> Home</a>
+          <a href="about.html"><i class="fas fa-user"></i> About</a>
+          <a href="skills.html"><i class="fas fa-tools"></i> Skills</a>
+          <a href="experience.html"><i class="fas fa-briefcase"></i> Experience</a>
+          <a href="education.html"><i class="fas fa-graduation-cap"></i> Education</a>
+          <a href="references.html"><i class="fas fa-users"></i> References</a>
+        </div>
+      </div>
+    </nav>
     <h1>Character References</h1>
     <p>Nikie Jean Evangelista</p>
   </header>
